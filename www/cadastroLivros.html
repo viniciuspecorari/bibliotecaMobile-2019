@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+
+  <!-- CSS E BOOTSTRAP -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Jquery -->
+  <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/conexaoBanco.js"></script>
+
+  <div class="container">
+   <section id="corpoInicial" style="width:330px; margin-left:0%; position:relative;">
+      <a href="index.html">
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="imagens/bookRegister.png" style="width:50px; margin-left:70%; margin-top:-5%;">
+        </div>
+
+        <div class="col-xs-9">
+          <h1 style="box-shadow:0px 0px 0px transparent; margin-left:-3%; border:1px solid transparent;margin-top:0%;"><b>Register</b></h1>
+        </div>
+      </div>
+      </a>
+    </section>
+  </div>
+</head>
+
+<div class="geral">
+  <!-- Corpo do formulário -->
+<body>
+  <section id="corpoCadastro">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>
+          <b>Titulo:</b>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="text" class="form-control" placeholder="titulo" id="txtTitulo">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>
+          <b>Autor:</b>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="text" class="form-control" placeholder="autor" id="txtAutor">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>
+          <b>Ano:</b>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="number" class="form-control" placeholder="dd/mm/aaaa" id="txtAno">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>
+          <b>ISBN:</b>
+        </h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="number" class="form-control" placeholder="codigo de registro" id="txtIsbn" style="margin-bottom:10%;">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <center>
+      <div class="col-xs-12">
+        <button class=" btn-success btn-block" id="cadastrar"><b>Cadastrar</b></button>
+      </div>
+      </center>
+    </div>
+  </section>
+</body>
+
+<!-- Rodapé -->
+<footer style="margin-left:0%; width:358px; position:fixed; top:90%;">
+  <section style="background-color:white; color:black;">
+      <!-- <div class="container"> -->
+        <div class="row" style="background-color:white;">
+          <center>
+            <a href="index.html">
+          <div class="col-xs-4 menu" >
+            <img src="imagens/home.png" id="menuB" style="width:70px; margin-top:5%;">
+          </div>
+            </a>
+
+            <a href="cadastroLivros.html">
+          <div class="col-xs-4 menu" style="background-color:black;">
+            <img src="imagens/registerB.png" id="registraB" style="width:70px;">
+          </div>
+            </a>
+
+            <a href="consultaLivro.html">
+          <div class="col-xs-4 menu">
+            <img src="imagens/search.png" id="pesquisaB" style="width:70px; margin-top:5%;">
+          </div>
+            </a>
+          </center>  
+        </div>  
+      <!-- </div>-->
+  </section>
+</footer>
+</div>
+</html>

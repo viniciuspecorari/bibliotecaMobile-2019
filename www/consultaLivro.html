@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+
+  <!-- CSS E BOOTSTRAP -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Jquery -->
+  <script src="components/jquery-3.3.1.min.js"></script>
+  <script src="components/conexaoBanco.js"></script>
+
+  <div class="container">
+   <section id="corpoInicial" style="width:325px; margin-left:0%; position:relative; top:15%;">
+      <a href="consultaLivro.html">
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="imagens/searchMenu.png" style="width:50px; margin-left:80%; margin-top:10%;">
+        </div>
+
+        <div class="col-xs-9">
+          <h1 style="box-shadow:0px 0px 0px transparent; margin-left:-5%; border:1px solid transparent;margin-top:3%"><b>Search</b></h1>
+        </div>
+      </div>
+      </a>
+    </section>
+  </div>
+    
+  <script>
+      $(document).ready(function(){
+      preencherSelect();
+    });
+  </script>
+</head>
+
+<div class="geral">
+  <!-- Corpo do formulário -->
+<body>
+  <section id="selectConsulta">
+    <div class="row">
+      <div class="col-xs-12">
+        <select class="form-control" id="buscaRe">
+          <option>Selecione</option>
+          <option></option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+<!-- Corpo select -->
+  <section id="corpoConsulta">
+      <div class="row">
+        <div class="col-xs-12">
+          <b><input type="text" class="form-control inputConTitulo" id="txtConTitulo" readonly></b>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4">
+          <h3>
+            <b>Autor:</b>
+          </h3>
+        </div>
+
+        <b><input type="text" class="form-control inputConLegend" id="txtConAutor" readonly></b>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4">
+          <h3>
+            <b>Ano:</b>
+          </h3>
+        </div>
+
+        <b><input type="number" class="form-control inputConLegend" id="txtConAno" readonly></b>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4">
+          <h3>
+           <b>ISBN:</b>
+          </h3>
+        </div>
+
+        <b><input type="number" class="form-control inputConLegend" id="txtConIsbn" style="margin-bottom:5%;" readonly></b>
+      </div>
+
+      <div class="row" style="margin-bottom:5%;">
+        <div class="col-xs-6">
+          <button type="button" class="btn-warning btn-block btnConEdit" id="btnEditar"><b>Editar</b><img src="imagens/edit.png" style="width:30px;margin-left:10%;"></button>
+        </div>
+
+        <div class="col-xs-6">
+          <button type="button" class="btn-danger btn-block btnConDel" id="btnDeletar"><b>Deletar</b><img src="imagens/trash.png" style="width:30px;margin-left:10%; "></button>
+        </div>
+      </div>
+  </section>
+</body>
+
+<!-- Rodapé -->
+<footer style="margin-left:0%; width:345px; position:fixed; top:90%;left:3.5%;">
+  <section style="background-color:white; color:black;">
+       <!-- <div class="container"> -->
+        <div class="row" style="background-color:white;">
+          <center>
+            <a href="index.html">
+          <div class="col-xs-4 menu" >
+            <img src="imagens/home.png" id="menuB" style="width:70px; margin-top:5%;">
+          </div>
+            </a>
+
+            <a href="cadastroLivros.html">
+          <div class="col-xs-4 menu">
+            <img src="imagens/registerB.png" id="registraB" style="width:70px;">
+          </div>
+            </a>
+
+            <a href="consultaLivro.html">
+          <div class="col-xs-4 menu" style="background-color:black;">
+            <img src="imagens/search.png" id="pesquisaB" style="width:70px; margin-top:5%;">
+          </div>
+            </a>
+          </center>  
+        </div>    
+      <!-- </div>-->
+  </section>
+</footer>
+</div>
+</html>
